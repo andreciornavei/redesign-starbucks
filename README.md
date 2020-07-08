@@ -8,8 +8,6 @@ A redesign of starbucks app made with Flutter! 🚀
 
 ## 📜 License
 
-## License
-
 [![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://github.com/andreciornavei/redesign-starbucks/blob/master/LICENSE)
 
 Copyright (c) 2020 André Ciornavei
@@ -31,6 +29,12 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+## 🎉 Acknowledgment
+
+Thanks to Mônica Mesquita for creating an amazing app concept and allowing me to reproduce it.
 
 ---
 
