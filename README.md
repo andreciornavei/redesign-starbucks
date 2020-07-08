@@ -1,16 +1,19 @@
-# starbucks
+# Redesign Starbucks
 
-A new Flutter project.
+A redesign of starbucks app made with Flutter! 🚀
 
-## Getting Started
+![](https://github.com/andreciornavei/images/blob/master/redesign_starbucks/redesign_starbucks.gif?raw=true)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📜 License
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This project is under the MIT license. See the [LICENSE](https://github.com/andreciornavei/redesign-starbucks/blob/master/LICENSE) for details.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+Design created by Mônica Mesquita - [Get in touch!](https://www.behance.net/gallery/100261659/Redesign-Interface-Mobile)
+
+App reproduced by André Ciornavei - [Get in touch!](https://www.linkedin.com/in/andreciornavei/)
+
+

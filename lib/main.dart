@@ -11,6 +11,7 @@ void main() => initializeDateFormatting('pt_BR', null).then((_) {
         SystemUiOverlayStyle(
           statusBarColor: AppColors.starbucksGreen,
           systemNavigationBarColor: AppColors.starbucksGreen,
+           statusBarIconBrightness: Brightness.light,
         ),
       );
       return runApp(
