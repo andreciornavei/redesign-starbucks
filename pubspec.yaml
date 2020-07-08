@@ -1,0 +1,46 @@
+name: starbucks
+description: A redesigned app for starbucks.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_money_formatter: ^0.8.3
+  cupertino_icons: ^0.1.3
+  carousel_slider: ^2.2.1
+  flutter_icons: ^1.1.0
+  get: ^3.0.1
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.7.3
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  image_path: "assets/images/icons/icon.png"
+  android: true
+  ios: true
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat/Montserrat-Regular.otf
+        - asset: assets/fonts/montserrat/Montserrat-Light.otf
+          weight: 300
+        - asset: assets/fonts/montserrat/Montserrat-Medium.otf
+          weight: 500
+        - asset: assets/fonts/montserrat/Montserrat-Semibold.otf
+          weight: 600
+        - asset: assets/fonts/montserrat/Montserrat-Bold.otf
+          weight: 700  
+  assets:
+    - assets/images/icons/
+    - assets/images/illustrations/
+    - assets/images/products/
