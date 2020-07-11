@@ -8,15 +8,21 @@ class ProductsController extends GetxController {
   }
 
   CarouselController carouselController = CarouselController();
-  
+
   RxInt selectedIndex = RxInt(0);
-  setSelectedIndex(int value){
+  setSelectedIndex(int value) {
     this.selectedIndex.value = value;
     setVisibleTitle(false);
   }
 
-  RxBool visibleTitle = RxBool(true);
+  RxBool visibleTitle = RxBool(false);
   setVisibleTitle(bool visibleTitle) => this.visibleTitle.value = visibleTitle;
+
+  RxString titleName = RxString("");
+  setTitleName(String value) => titleName.value = value;
+  
+  RxInt titleRate = RxInt(0);
+  setTitleRate(int value) => titleRate.value = value;
 
   RxBool visible = RxBool(true);
   setVisible(bool visible) => this.visible.value = visible;
@@ -67,8 +73,17 @@ class ProductsController extends GetxController {
     ),
   ]);
 
+  updateTitleProduct() {
+    if (visibleTitle.value == false) {
+      setTitleName(products[selectedIndex.value].name.value);
+      setTitleRate(products[selectedIndex.value].rate.value);
+      setVisibleTitle(true);
+    }
+  }
+
   Future<void> _showAfter() async {
     await Future.delayed(Duration(milliseconds: 1000), () => {});
     setVisible(false);
+    updateTitleProduct();
   }
 }

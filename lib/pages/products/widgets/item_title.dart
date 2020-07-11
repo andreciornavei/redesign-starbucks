@@ -7,31 +7,22 @@ import '../controller.dart';
 
 class ItemTitle extends StatelessWidget {
   final ProductsController controller = Get.find();
-  String name;
-  int rate;
-  ItemTitle(this.name, this.rate);
-
+  
   @override
   Widget build(BuildContext context) {
     return Obx(
       () => AnimatedOpacity(
         opacity: controller.visibleTitle.value ? 1.0 : 0.0,
         duration: Duration(milliseconds: 250),
-        onEnd: () {
-          if (controller.visibleTitle.value == false) {
-            this.name = controller.products[controller.selectedIndex.value].name.value;
-            this.rate = controller.products[controller.selectedIndex.value].rate.value;
-            controller.setVisibleTitle(true);
-          }
-        },
+        onEnd: controller.updateTitleProduct,
         child: Column(
           children: <Widget>[
-            Stars(this.rate),
+            Stars(this.controller.titleRate.value),
             SizedBox(height: 10),
             Container(
               height: 100,
               child: Text(
-                this.name,
+                this.controller.titleName.value,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 42,

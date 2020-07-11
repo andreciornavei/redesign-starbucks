@@ -27,12 +27,7 @@ class Products extends StatelessWidget {
                   children: <Widget>[
                     Header(),
                     SizedBox(height: 40),
-                    ItemTitle(
-                      controller
-                          .products[controller.selectedIndex.value].name.value,
-                      controller
-                          .products[controller.selectedIndex.value].rate.value,
-                    ),
+                    ItemTitle(),
                     Expanded(child: ListProducts()),
                   ],
                 ),
