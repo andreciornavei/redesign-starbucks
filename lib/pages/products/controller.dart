@@ -74,11 +74,9 @@ class ProductsController extends GetxController {
   ]);
 
   updateTitleProduct() {
-    if (visibleTitle.value == false) {
-      setTitleName(products[selectedIndex.value].name.value);
-      setTitleRate(products[selectedIndex.value].rate.value);
-      setVisibleTitle(true);
-    }
+    setTitleName(products[selectedIndex.value].name.value);
+    setTitleRate(products[selectedIndex.value].rate.value);
+    setVisibleTitle(true);
   }
 
   Future<void> _showAfter() async {
