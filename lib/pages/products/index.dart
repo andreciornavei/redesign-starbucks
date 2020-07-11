@@ -25,10 +25,7 @@ class Products extends StatelessWidget {
               child: SafeArea(
                 child: Column(
                   children: <Widget>[
-                    Hero(
-                      tag: "header",
-                      child: Header(),
-                    ),
+                    Header(),
                     SizedBox(height: 40),
                     ItemTitle(
                       controller

@@ -54,10 +54,7 @@ class Product extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          Hero(
-                            tag: "header",
-                            child: Header(canBack: true),
-                          ),
+                          Header(canBack: true),
                           Container(
                             height: Get.width - 50,
                             alignment: Alignment.center,

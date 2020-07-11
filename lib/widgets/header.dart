@@ -10,45 +10,48 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: Container(
-        height: 65,
-        padding: EdgeInsets.zero,
-        child: Stack(
-          children: <Widget>[
-            Align(
-              alignment: Alignment.center,
-              child: Text(
-                "STARBUCKS",
-                style: TextStyle(
-                  fontSize: 21,
-                  color: AppColors.white,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "Montserrat",
-                  decoration: TextDecoration.none,
-                ),
-              ),
-            ),
-            Visibility(
-              visible: canBack,
-              child: Padding(
-                padding: EdgeInsets.all(10),
-                child: SizedBox(
-                  width: 42,
-                  height: 42,
-                  child: IconButton(
-                    icon: Icon(
-                      Feather.chevron_left,
-                      size: 21,
-                      color: AppColors.white,
-                    ),
-                    onPressed: () => Get.back(),
+    return Hero(
+      tag: "header",
+      child: Material(
+        color: Colors.transparent,
+        child: Container(
+          height: 65,
+          padding: EdgeInsets.zero,
+          child: Stack(
+            children: <Widget>[
+              Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "STARBUCKS",
+                  style: TextStyle(
+                    fontSize: 21,
+                    color: AppColors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Montserrat",
+                    decoration: TextDecoration.none,
                   ),
                 ),
               ),
-            ),
-          ],
+              Visibility(
+                visible: canBack,
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: SizedBox(
+                    width: 42,
+                    height: 42,
+                    child: IconButton(
+                      icon: Icon(
+                        Feather.chevron_left,
+                        size: 21,
+                        color: AppColors.white,
+                      ),
+                      onPressed: () => Get.back(),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
