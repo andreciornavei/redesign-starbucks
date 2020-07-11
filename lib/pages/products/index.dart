@@ -18,17 +18,7 @@ class Products extends StatelessWidget {
         backgroundColor: AppColors.starbucksGreen,
         body: Stack(
           children: <Widget>[
-            Hero(
-              tag: "background_container",
-              child: Container(
-                width: Get.width,
-                height: Get.height,
-                decoration: BoxDecoration(
-                  color: AppColors.starbucksGreen,
-                ),
-                child: Watermark(),
-              ),
-            ),
+            Watermark(),
             Leafs(),
             Container(
               alignment: Alignment.center,
