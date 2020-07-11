@@ -15,6 +15,7 @@ class Products extends StatelessWidget {
     return GetBuilder<ProductsController>(
       init: ProductsController(),
       builder: (controller) => Scaffold(
+        backgroundColor: AppColors.starbucksGreen,
         body: Stack(
           children: <Widget>[
             Hero(
